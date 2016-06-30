@@ -22,3 +22,6 @@
 最小生成树
 在无向图中找出一颗最小生成树，此树并不是唯一的
 Prim算法基本上和求最短路径的Dijkstra算法相同，唯一的区别在于：距离的更新法则不同，只需满足distance = min(weight, distance)
+
+Prim算法和Kruskal算法都可以处理带有负边权的图
+求解最大生成树：对所有的边都取反，最后对总距离取反恢复；或者距离更新法则变为：distance = max(weight, distance)；
