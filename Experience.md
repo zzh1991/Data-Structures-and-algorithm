@@ -1,4 +1,5 @@
 ##大数操作
+* 在java.math库中
 * BigInteger对象，有许多方法，加减乘除，取余数等
 * BigDecimal对象
 
@@ -22,3 +23,12 @@
 * getNumericValue()
 * isWhitespace()
 
+##进制转换
+* 十进制转换成N进制
+  * Integer.toBinaryString()
+  * Integer.toOctalString()
+  * Integer.toHexString()
+  * Integer.toString(int, jinzhi)：不适合负数
+* N进制转化成十进制
+  * Integer.parseInt(String s,int radix)
+  * Integer.valueOf(String s,int radix)
