@@ -1,3 +1,5 @@
+package tree;
+
 /**
  * Created by zzh1991 on 2016/6/24.
  */
