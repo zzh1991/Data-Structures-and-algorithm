@@ -12,14 +12,14 @@ public class Sort {
 
     public static void main(String[] args) {
         int[] array = new int[]{5, 9, 4, 6, 5, 3};
-//        quickSort(array, 0, array.length - 1);
+        quickSort(array, 0, array.length - 1);
         mergeSort(array, array.length);
         System.out.println(Arrays.stream(array)
                 .boxed()
                 .collect(Collectors.toList()));
     }
 
-    private static void quickSort(int[] array, int start, int end) {
+    public static void quickSort(int[] array, int start, int end) {
         if (start < end) {
             int pivotIndex = partition(array, start, end);
             quickSort(array, start, pivotIndex - 1);
@@ -49,7 +49,7 @@ public class Sort {
         return i + 1;
     }
 
-    private static void mergeSort(int[] array, int length) {
+    public static void mergeSort(int[] array, int length) {
         if (length < SIZE_TWO) {
             return;
         }
